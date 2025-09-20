@@ -1,0 +1,236 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Utilisateures;
+use Illuminate\Support\Facades\Hash;
+
+class UtilisateursSeeder extends Seeder
+{
+    public function run()
+    {
+        Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Youssef El Amrani',
+    'CIN' => 'AA123456',
+    'email' => 'youssef.elamrani@gmail.com',
+    'motdepasse' => 'youssef123',
+    'telephone' => '0611122233',
+    'adresse' => '45 Rue El Jadida, Rabat',
+    'dateNaissance' => '1989-04-22',
+    'sexe' => 'Homme',
+    'dateEmbauche' => '2021-03-15',
+    'statutMarital' => 'Célibataire',
+    'salaire' => 13000.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Ingénieur en Informatique',
+    'competences' => 'Java, Spring Boot, SQL',
+    'photo' => null,
+    'Fonction' => 'Backend Developer',
+    'Departement' => 'Software Development',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Amina Benali',
+    'CIN' => 'BB654321',
+    'email' => 'amina.benali@gmail.com',
+    'motdepasse' => 'amina123',
+    'telephone' => '0677889900',
+    'adresse' => '12 Bd Zerktouni, Casablanca',
+    'dateNaissance' => '1993-09-12',
+    'sexe' => 'Femme',
+    'dateEmbauche' => '2022-06-01',
+    'statutMarital' => 'Marié(e)',
+    'salaire' => 12500.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Master UX Design',
+    'competences' => 'Figma, Adobe XD, CSS, HTML',
+    'photo' => null,
+    'Fonction' => 'UX/UI Designer',
+    'Departement' => 'Design & User Experience',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Rachid Moujahid',
+    'CIN' => 'CC789456',
+    'email' => 'rachid.moujahid@gmail.com',
+    'motdepasse' => 'rachid123',
+    'telephone' => '0600112233',
+    'adresse' => 'Avenue Mohammed V, Fès',
+    'dateNaissance' => '1990-11-05',
+    'sexe' => 'Homme',
+    'dateEmbauche' => '2020-02-20',
+    'statutMarital' => 'Divorcé(e)',
+    'salaire' => 15000.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Master en Cybersécurité',
+    'competences' => 'Kali Linux, Python, SIEM',
+    'photo' => null,
+    'Fonction' => 'Cybersecurity Analyst',
+    'Departement' => 'IT Security',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Khadija Zerhouni',
+    'CIN' => 'DD987321',
+    'email' => 'khadija.zerhouni@gmail.com',
+    'motdepasse' => 'khadija123',
+    'telephone' => '0622334455',
+    'adresse' => 'Lotissement Al Qods, Marrakech',
+    'dateNaissance' => '1995-07-30',
+    'sexe' => 'Femme',
+    'dateEmbauche' => '2023-04-18',
+    'statutMarital' => 'Célibataire',
+    'salaire' => 11000.00,
+    'typeContrat' => 'CDD',
+    'niveauEtude' => 'Licence en Marketing',
+    'competences' => 'SEO, Google Ads, Analytics',
+    'photo' => null,
+    'Fonction' => 'Marketing Director',
+    'Departement' => 'Digital Marketing',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Walid Bouzid',
+    'CIN' => 'EE456789',
+    'email' => 'walid.bouzid@gmail.com',
+    'motdepasse' => 'walid123',
+    'telephone' => '0666778899',
+    'adresse' => 'Rue Atlas, Agadir',
+    'dateNaissance' => '1987-02-14',
+    'sexe' => 'Homme',
+    'dateEmbauche' => '2019-10-05',
+    'statutMarital' => 'Marié(e)',
+    'salaire' => 16000.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Master DevOps',
+    'competences' => 'Docker, Kubernetes, Jenkins',
+    'photo' => null,
+    'Fonction' => 'DevOps Engineer',
+    'Departement' => 'Cloud & DevOps',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Fatima Zahra El Idrissi',
+    'CIN' => 'FF741852',
+    'email' => 'fatima.elidrissi@gmail.com',
+    'motdepasse' => 'fatima123',
+    'telephone' => '0655443322',
+    'adresse' => 'Avenue des FAR, Tanger',
+    'dateNaissance' => '1994-06-09',
+    'sexe' => 'Femme',
+    'dateEmbauche' => '2024-01-20',
+    'statutMarital' => 'Célibataire',
+    'salaire' => 11800.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Master en Intelligence Artificielle',
+    'competences' => 'Python, TensorFlow, Pandas',
+    'photo' => null,
+    'Fonction' => 'Data Scientist',
+    'Departement' => 'Artificial Intelligence',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Hicham Bennis',
+    'CIN' => 'GG321654',
+    'email' => 'hicham.bennis@gmail.com',
+    'motdepasse' => 'hicham123',
+    'telephone' => '0688997766',
+    'adresse' => 'Hay Riad, Rabat',
+    'dateNaissance' => '1985-08-01',
+    'sexe' => 'Homme',
+    'dateEmbauche' => '2018-07-12',
+    'statutMarital' => 'Marié(e)',
+    'salaire' => 17000.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'MBA',
+    'competences' => 'Leadership, Scrum, Gestion',
+    'photo' => null,
+    'Fonction' => 'IT Project Manager',
+    'Departement' => 'Strategy & Innovation',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Imane Laabidi',
+    'CIN' => 'HH159753',
+    'email' => 'imane.laabidi@gmail.com',
+    'motdepasse' => 'imane123',
+    'telephone' => '0611995533',
+    'adresse' => 'Centre Ville, Meknès',
+    'dateNaissance' => '1996-10-17',
+    'sexe' => 'Femme',
+    'dateEmbauche' => '2023-08-10',
+    'statutMarital' => 'Célibataire',
+    'salaire' => 10500.00,
+    'typeContrat' => 'CDD',
+    'niveauEtude' => 'Licence en Informatique',
+    'competences' => 'HTML, CSS, JS, Vue.js',
+    'photo' => null,
+    'Fonction' => 'Frontend Developer',
+    'Departement' => 'Software Development',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Nabil El Hafidi',
+    'CIN' => 'II963852',
+    'email' => 'nabil.hafidi@gmail.com',
+    'motdepasse' => 'nabil123',
+    'telephone' => '0677886655',
+    'adresse' => 'Oulfa, Casablanca',
+    'dateNaissance' => '1991-03-03',
+    'sexe' => 'Homme',
+    'dateEmbauche' => '2021-11-01',
+    'statutMarital' => 'Marié(e)',
+    'salaire' => 13800.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Master en Cloud Computing',
+    'competences' => 'AWS, Azure, Terraform',
+    'photo' => null,
+    'Fonction' => 'Cloud Consultant',
+    'Departement' => 'Cloud & DevOps',
+    'etat' => 'Actif',
+]);
+
+Utilisateures::create([
+    'profile' => 'employe',
+    'nomComplet' => 'Salma El Khatib',
+    'CIN' => 'JJ741236',
+    'email' => 'salma.khatib@gmail.com',
+    'motdepasse' => 'salma123',
+    'telephone' => '0633445566',
+    'adresse' => 'Quartier Ennakhil, Oujda',
+    'dateNaissance' => '1992-12-25',
+    'sexe' => 'Femme',
+    'dateEmbauche' => '2020-05-05',
+    'statutMarital' => 'Célibataire',
+    'salaire' => 11200.00,
+    'typeContrat' => 'CDI',
+    'niveauEtude' => 'Licence en GRH',
+    'competences' => 'Gestion RH, Paie, Recrutement',
+    'photo' => null,
+    'Fonction' => 'HR Manager',
+    'Departement' => 'Human Resources',
+    'etat' => 'Actif',
+]);
+
+    }
+}
+
